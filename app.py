@@ -26,7 +26,7 @@ def check_db_connection():
 @app.route("/")
 def index():
     if check_db_connection():
-        return "Database Connection Status: Connected"
+        return "Database Connection Status: OK"
     return "Database Connection Status: Disconnected"
 
 
